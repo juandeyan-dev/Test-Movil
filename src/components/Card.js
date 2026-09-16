@@ -8,17 +8,16 @@ export default function Card({clase, onPress}){
     return(
         <Pressable
             onPress={onPress}
+            style = {style.tarjeta}
         >
-            <Image source={{uri: clase.image}}/>
-            <View>
-                <EtiquetaNivel nivel={clase.nivel}/>
+            <Image source={{uri: clase.image}} style={style.imagen}/>
+            <View style={style.cuerpo}>
+              <EtiquetaNivel nivel={clase.nivel}/>
+              <Text style={style.titulo} numberOfLines={2}>{clase.titulo}</Text>
+              <Text style={style.profesor}> {clase.profesor.nombre}</Text>
+              <Text style={style.meta}>{clase.nivel}</Text>
+              <Text style={style.precio}>{clase.precio}</Text>
             </View>
-            <Text style={style.titulo} numberOfLines={2}>{clase.titulo}</Text>
-          
-            <Text> {clase.profesor}</Text>
-           
-            --horario
-            --precio
 
         </Pressable>
 
