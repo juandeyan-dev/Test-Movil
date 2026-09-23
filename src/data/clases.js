@@ -7,7 +7,7 @@ export const CLASES = [
     nivel: 'Basico',
     descripcion:
       'Construye tus primeras frases, saludos y presentaciones personales. Ideal si nunca has estudiado inglés formalmente.',
-    profesor: { nombre: 'Laura Gómez', pais: 'Colombia', foto: 'https://i.pravatar.cc/200?img=45' },
+    profesor: { nombre: 'Laura Gómez', pais: 'Colombia', foto: 'https://randomuser.me/api/portraits/women/44.jpg' },
     imagen: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80',
     precio: 32000,
     duracion: 50,
